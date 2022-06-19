@@ -38,6 +38,11 @@ p {
     text-decoration: none;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 a {
     color: var(--white);
 }
@@ -66,7 +71,7 @@ a {
     background-color: rgba(242, 120, 92, 0.7);
 }
 
-.header__inner::before{
+.header__inner::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -111,6 +116,7 @@ a {
     border-radius: 10px;
     background-color: var(--green);
 }
+
 /* Header END */
 
 
@@ -119,13 +125,12 @@ a {
 /* *****Review***** */
 .preview {
     width: 100%;
-    min-height: 765px;
 }
 
 .preview__inner {
     width: 61.94%;
     margin-left: 8.33%;
-    margin-top: 8.33%;
+    margin-top: 30px;
 }
 
 .preview-title {
@@ -166,15 +171,15 @@ a {
     border: none;
     background: none;
 
-  }
+}
 
-  .search__input::placeholder {
+.search__input::placeholder {
     color: var(--orange);
-  }
+}
 
-  .search__button {
+.search__button {
     padding: 13.5px 32.5px;
-    
+
     font-family: 'Red Hat Text', sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -183,4 +188,189 @@ a {
     background-color: var(--green);
     border-radius: 10px;
     border: none;
-  }
+}
+
+/* *****Review END***** */
+
+/* *****Steps***** */
+
+.steps {
+    min-width: 100%;
+    margin-top: 197px;
+    padding-top: 104px;
+    background-color: var(--white);
+}
+
+.steps__inner {
+    width: 81.74%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 40px;
+
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    color: var(--orange);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.steps__list {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.steps__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps__item-width247px {
+    width: 247px;
+    margin-right: 231px;
+}
+
+.steps__item-width222px {
+    width: 222px;
+    margin-right: 160px;
+}
+
+.steps__item-width317px {
+    width: 317px;
+}
+
+
+.steps__item-logo {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+    background-color: var(--orange);
+}
+
+.steps__item-text {
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    font-size: 1.20rem;
+    color: var(--orange);
+}
+
+/* *****Steps END***** */
+
+/* *****Destination***** */
+.destination {
+    background-color: var(--white);
+    padding-top: 97px;
+    overflow: hidden;
+    padding-bottom: 300px;
+}
+
+.destination__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.slider__list .slider__item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.slider__item {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    border-radius: 16px;
+}
+
+.slider__item-spain {
+    background: url(assets/spain.png) center center / cover no-repeat;
+}
+
+.slider__item-japan {
+    background: url(assets/japan.png) center center / cover no-repeat;
+}
+
+.slider__item-usa {
+    background: url(assets/usa.png) center center / cover no-repeat;
+}
+
+
+.contry-name {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.button__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.button__list .button__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.button__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f2785c;
+    opacity: 50%;
+}
+
+.button__item-active {
+    opacity: 1;
+}
+
+.button__destination {
+    padding: 10px 32px 10px 32px;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--green);
+}
+
+.button__inner {
+    display: flex;
+    align-items: center;
+}
+
+.button-icon {
+    margin-right: 10px;
+}
+
+.button-text {
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 24px;
+}
+
+/* *****Destination END***** */
